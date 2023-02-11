@@ -36,14 +36,14 @@
 
 > Для работы с postgresql можно использовать docker-контейнер:
 > ```
-> docker run --name skillstrack_postgres -p <POSTGRES_PORT>:5432 -e POSTGRES_USER=<POSTGRES_USER>   -e POSTGRES_PASSWORD=<POSTGRES_PASSWORD> -e POSTGRES_DB=<POSTGRES_DATABASE_NAME> --restart unless-stopped -d postgres:alpine
+> docker run --name corpchat_postgres -p <POSTGRES_PORT>:5432 -e POSTGRES_USER=<POSTGRES_USER>   -e POSTGRES_PASSWORD=<POSTGRES_PASSWORD> -e POSTGRES_DB=<POSTGRES_DATABASE_NAME> --restart unless-stopped -d postgres:alpine
 > ```
 > _Примечание_ - Значения в `<>` должны соответствовать значениям файла
 > переменных окружения (`.env`).
 
 > Пример:
 > ```
-> docker run --name skillstrack_postgres -p 5433:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=database --restart unless-stopped -d postgres:alpine
+> docker run --name corpchat_postgres -p 5433:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=database --restart unless-stopped -d postgres:alpine
 > ```
 
 ### Работа с docker-compose
